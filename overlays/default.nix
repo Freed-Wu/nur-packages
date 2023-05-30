@@ -1,3 +1,5 @@
-[
-  (import ./my-overlay)
-]
+{
+  # Add your overlays here
+  #
+  # my-overlay = import ./my-overlay;
+}

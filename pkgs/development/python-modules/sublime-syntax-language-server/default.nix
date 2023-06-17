@@ -1,27 +1,30 @@
 { mySources
 , python3
+, lib
+, setuptools-generate
 }:
 
 with python3.pkgs;
 
 buildPythonPackage rec {
-  inherit (mySources.repl-python-wakatime) pname version src;
+  inherit (mySources.sublime-syntax-language-server) pname version src;
   format = "pyproject";
   disabled = pythonOlder "3.6";
   propagatedBuildInputs = [
-    ptpython
-    ipython
+    pygls
+    platformdirs
+    beautifulsoup4
   ];
   nativeBuildInputs = [
-    setuptools
+    setuptools-generate
   ];
   pythonImportsCheck = [
-    "repl_python_wakatime"
+    "sublime_syntax_language_server"
   ];
 
   meta = with lib; {
-    homepage = "https://repl-python-wakatime.readthedocs.io";
-    description = "Python REPL plugin for automatic time tracking and metrics generated from your programming activity";
+    homepage = "https://sublime-syntax-language-server.readthedocs.io";
+    description = "sublime-syntax language server";
     license = licenses.gpl3;
     maintainers = with maintainers; [ Freed-Wu ];
     platforms = platforms.unix;

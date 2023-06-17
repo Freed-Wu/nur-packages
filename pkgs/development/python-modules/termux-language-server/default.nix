@@ -1,26 +1,30 @@
 { mySources
 , python3
+, lib
+, setuptools-generate
 }:
 
 with python3.pkgs;
 
 buildPythonPackage rec {
-  inherit (mySources.help2man) pname version src;
+  inherit (mySources.termux-language-server) pname version src;
+  format = "pyproject";
   disabled = pythonOlder "3.6";
   propagatedBuildInputs = [
-    jinja2
+    pygls
+    platformdirs
+    beautifulsoup4
   ];
   nativeBuildInputs = [
-    setuptools
-    shtab
+    setuptools-generate
   ];
   pythonImportsCheck = [
-    "help2man"
+    "termux_language_server"
   ];
 
   meta = with lib; {
-    homepage = "https://help2man.readthedocs.io";
-    description = "Convert --help and --version to man page";
+    homepage = "https://termux-language-server.readthedocs.io";
+    description = "termux build.sh language server";
     license = licenses.gpl3;
     maintainers = with maintainers; [ Freed-Wu ];
     platforms = platforms.unix;

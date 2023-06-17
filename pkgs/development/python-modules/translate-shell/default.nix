@@ -15,13 +15,16 @@ buildPythonPackage rec {
     colorama
     keyring
     langdetect
+    # https://github.com/NixOS/nixpkgs/issues/241694
     # py-notifier
     rich
+    # https://github.com/NixOS/nixpkgs/issues/241696
     # pystardict
     repl-python-wakatime
+    pygls
     pyyaml
   ];
-  nativeCheckInputs = [
+  nativeBuildInputs = [
     setuptools-generate
   ];
   pythonImportsCheck = [
@@ -33,7 +36,7 @@ buildPythonPackage rec {
     homepage = "https://translate-shell.readthedocs.io";
     description = "Translate text by google, bing, youdaozhiyun, haici, stardict, etc at same time from CLI, GUI (GNU/Linux, Android, macOS and Windows), REPL, python, shell and vim";
     license = licenses.gpl3;
-    maintainers = with maintainers; [ ];
+    maintainers = with maintainers; [ Freed-Wu ];
     platforms = platforms.unix;
   };
 }

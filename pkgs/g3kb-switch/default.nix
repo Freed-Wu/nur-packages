@@ -1,31 +1,38 @@
-{ mySources
-, lib
+{ lib
 , stdenv
 , cmake
 , pkg-config
 , glib
-  # , bash-completion
+, fetchFromGitHub
 }:
 stdenv.mkDerivation rec {
-  inherit (mySources.g3kb-switch) pname version src;
+  pname = "g3kb-switch";
+  version = "1.3";
+  src = fetchFromGitHub {
+    owner = "lyokha";
+    repo = "g3kb-switch";
+    rev = version;
+    sha256 = "sha256-QLTRM2GXSxvvVYOMq6QL44zZvoGkiolTLZ1u7dB7dt4=";
+  };
+
   nativeBuildInputs = [
     cmake
     pkg-config
-    glib
-    # bash-completion
   ];
-  patchPhase = ''
-    sed -i 's=/usr/=''${CMAKE_INSTALL_PREFIX}=g' CMakeLists.txt
-    sed -i 's=\\\''${prefix}/==g' CMakeLists.txt
-    mkdir -p $out/share/gnome-shell/extensions
-    cp -r extension/g3kb-switch@g3kb-switch.org -t $out/share/gnome-shell/extensions
-  '';
+  buildInputs = [
+    glib
+  ];
+  cmakeFlags = [
+    "-DG3KBSWITCH_VIM_XKBSWITCH_LIB_PATH=lib"
+    "-DBASH_COMPLETION_COMPLETIONSDIR=${placeholder "out"}/share/bash-completions/completions"
+    "-DZSH_COMPLETION_COMPLETIONSDIR=${placeholder "out"}/share/zsh/site-functions"
+  ];
 
   meta = with lib; {
     homepage = "https://github.com/lyokha/g3kb-switch";
-    description = "CLI keyboard layout switcher for Gnome Shell";
+    description = "CLI keyboard layout switcher for GNOME Shell";
     license = licenses.bsd2;
-    maintainers = with maintainers; [ ];
+    maintainers = with maintainers; [ Freed-Wu ];
     platforms = platforms.unix;
   };
 }

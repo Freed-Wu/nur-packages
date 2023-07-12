@@ -21,7 +21,7 @@ let
     mySources = callPackage ./_sources/generated.nix { };
 
     # https://github.com/NixOS-CN/flakes/pull/51
-    netease-cloud-music = callPackage ./pkgs/netease-cloud-music { };
+    netease-cloud-music = callPackage ./pkgs/applications/audio/netease-cloud-music { };
     # https://github.com/NixOS/nixpkgs/pull/243032
     g3kb-switch = callPackage ./pkgs/tools/misc/g3kb-switch { };
 

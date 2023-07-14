@@ -4,7 +4,7 @@
 , dpkg
 , autoPatchelfHook
 , makeWrapper
-# , qt5
+  # , qt5
 , xorg
 , libdrm
 , alsa-lib

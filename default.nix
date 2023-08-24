@@ -36,7 +36,7 @@ let
     repl-python-codestats = callPackage ./pkgs/development/python-modules/repl-python-codestats { };
     translate-shell = callPackage ./pkgs/development/python-modules/translate-shell { };
     mulimgviewer = callPackage ./pkgs/development/python-modules/mulimgviewer { };
-    autoconf-language-server = callPackage ./pkgs/development/python-modules/autoconf-language-server { };
+    autotools-language-server = callPackage ./pkgs/development/python-modules/autotools-language-server { };
     bitbake-language-server = callPackage ./pkgs/development/python-modules/bitbake-language-server { };
     pkgbuild-language-server = callPackage ./pkgs/development/python-modules/pkgbuild-language-server { };
     portage-language-server = callPackage ./pkgs/development/python-modules/portage-language-server { };

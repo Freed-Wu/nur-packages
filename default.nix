@@ -27,7 +27,7 @@ let
 
     gdb-prompt = callPackage ./pkgs/development/libraries/gdb-prompt { };
     tcl-prompt = callPackage ./pkgs/development/libraries/tcl-prompt { };
-    bash-prompt-style = callPackage ./pkgs/shells/bash/bash-prompt-style { };
+    bash-prompt = callPackage ./pkgs/shells/bash/bash-prompt { };
     undollar = callPackage ./pkgs/tools/misc/undollar { };
     manpager = callPackage ./pkgs/tools/misc/manpager { };
     help2man = callPackage ./pkgs/development/python-modules/help2man { };

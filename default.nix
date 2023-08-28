@@ -25,6 +25,8 @@ let
     # https://github.com/NixOS/nixpkgs/pull/243032
     g3kb-switch = callPackage ./pkgs/tools/misc/g3kb-switch { };
 
+    tcl-prompt = callPackage ./pkgs/development/libraries/tcl-prompt { };
+    bash-prompt-style = callPackage ./pkgs/shells/bash/bash-prompt-style { };
     undollar = callPackage ./pkgs/tools/misc/undollar { };
     manpager = callPackage ./pkgs/tools/misc/manpager { };
     help2man = callPackage ./pkgs/development/python-modules/help2man { };

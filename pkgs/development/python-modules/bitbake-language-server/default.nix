@@ -13,10 +13,12 @@ buildPythonPackage rec {
   propagatedBuildInputs = [
     pygls
     platformdirs
+    tree-sitter
   ];
   nativeBuildInputs = [
-    setuptools-generate
-    setuptools-scm
+    scikit-build-core
+    cmake
+    ninja
   ];
   pythonImportsCheck = [
     "bitbake_language_server"

@@ -1,7 +1,7 @@
 { mySources
 , python3
 , lib
-, setuptools-generate
+, git
 }:
 
 with python3.pkgs;
@@ -13,10 +13,13 @@ buildPythonPackage rec {
   propagatedBuildInputs = [
     pygls
     platformdirs
+    tree-sitter
   ];
   nativeBuildInputs = [
-    setuptools-generate
-    setuptools-scm
+    scikit-build-core
+    cmake
+    ninja
+    git
   ];
   pythonImportsCheck = [
     "autotools_language_server"

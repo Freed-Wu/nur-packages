@@ -1,6 +1,8 @@
 { mySources
 , python3
 , lib
+, lsp-tree-sitter
+, tree-sitter-tmux
 }:
 
 with python3.pkgs;
@@ -8,10 +10,10 @@ with python3.pkgs;
 buildPythonPackage rec {
   inherit (mySources.tmux-language-server) pname version src;
   format = "pyproject";
-  disabled = pythonOlder "3.6";
+  disabled = pythonOlder "3.10";
   propagatedBuildInputs = [
-    pygls
-    platformdirs
+    lsp-tree-sitter
+    tree-sitter-tmux
   ];
   nativeBuildInputs = [
     setuptools-generate

@@ -6,6 +6,7 @@
 stdenvNoCC.mkDerivation (finalAttrs: rec {
   inherit (mySources.windows10-themes) pname version src;
 
+  dontConfigure = true;
   dontBuild = true;
 
   installPhase = ''

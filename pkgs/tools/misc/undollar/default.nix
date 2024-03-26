@@ -1,9 +1,9 @@
 { mySources
 , lib
-, stdenv
+, stdenvNoCC
 , cmake
 }:
-stdenv.mkDerivation rec {
+stdenvNoCC.mkDerivation rec {
   inherit (mySources.undollar) pname version src;
 
   nativeBuildInputs = [ cmake ];

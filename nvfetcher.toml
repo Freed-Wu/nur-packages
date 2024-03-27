@@ -56,15 +56,15 @@ fetch.pypi = "tmux-language-server"
 
 [tree-sitter-muttrc]
 src.pypi = "tree-sitter-muttrc"
-fetch.pypi = "tree_sitter_muttrc"
+fetch.pypi = "tree-sitter-muttrc"
 
 [tree-sitter-tmux]
 src.pypi = "tree-sitter-tmux"
-fetch.pypi = "tree_sitter_tmux"
+fetch.pypi = "tree-sitter-tmux"
 
 [tree-sitter-zathurarc]
 src.pypi = "tree-sitter-zathurarc"
-fetch.pypi = "tree_sitter_zathurarc"
+fetch.pypi = "tree-sitter-zathurarc"
 
 [tree-sitter-requirements]
 src.github_tag = "tree-sitter-grammars/tree-sitter-requirements"

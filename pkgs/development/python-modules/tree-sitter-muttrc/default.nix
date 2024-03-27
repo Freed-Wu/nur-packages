@@ -9,16 +9,12 @@ buildPythonPackage rec {
   inherit (mySources.tree-sitter-muttrc) pname version src;
   format = "pyproject";
   disabled = pythonOlder "3.10";
-  propagatedBuildInputs = [
-    tree-sitter
-  ];
   nativeBuildInputs = [
-    scikit-build-core
-    cmake
-    ninja
-    setuptools-scm
-  ] ++ scikit-build-core.optional-dependencies.pyproject;
-  dontUseCmakeConfigure = true;
+    setuptools
+  ];
+  pythonImportsCheck = [
+    "tree_sitter_muttrc"
+  ];
 
   meta = with lib; {
     homepage = "https://tree-sitter-muttrc.readthedocs.io";

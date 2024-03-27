@@ -9,16 +9,12 @@ buildPythonPackage rec {
   inherit (mySources.tree-sitter-zathurarc) pname version src;
   format = "pyproject";
   disabled = pythonOlder "3.10";
-  propagatedBuildInputs = [
-    tree-sitter
-  ];
   nativeBuildInputs = [
-    scikit-build-core
-    cmake
-    ninja
-    setuptools-scm
-  ] ++ scikit-build-core.optional-dependencies.pyproject;
-  dontUseCmakeConfigure = true;
+    setuptools
+  ];
+  pythonImportsCheck = [
+    "tree_sitter_zathurarc"
+  ];
 
   meta = with lib; {
     homepage = "https://tree-sitter-zathurarc.readthedocs.io";

@@ -1,5 +1,4 @@
-{ mySources
-, lib
+{ lib
 , stdenv
 , cmake
 , pkg-config
@@ -7,7 +6,13 @@
 , fetchFromGitHub
 }:
 stdenv.mkDerivation rec {
-  inherit (mySources.g3kb-switch) pname version src;
+  name = "g3kb-switch";
+  src = fetchFromGitHub {
+    owner = "lyokha";
+    repo = "g3kb-switch";
+    rev = "cc2640cd3eaa896c7dbbf148f742e2f1a3cac768";
+    sha256 = "sha256-ba3pyidUlrftiDc/sfxDmG4Z4qYYI0+BJeYRoG4BzvE=";
+  };
 
   nativeBuildInputs = [
     cmake

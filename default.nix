@@ -31,8 +31,6 @@ let
     undollar = callPackage ./pkgs/tools/misc/undollar { };
     manpager = callPackage ./pkgs/tools/misc/manpager { };
 
-    # https://github.com/NixOS/nixpkgs/issues/261342
-    repl-python-wakatime = callPackage ./pkgs/development/python-modules/repl-python-wakatime { };
     lua-prompt-style = callPackage ./pkgs/development/lua-modules/prompt-style { };
     luajit-prompt-style = callPackage ./pkgs/development/lua-modules/prompt-style { luaPackages = pkgs.luajitPackages; };
     translate-shell = callPackage ./pkgs/development/python-modules/translate-shell { };

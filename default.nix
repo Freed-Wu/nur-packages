@@ -49,7 +49,6 @@ let
     tmux-language-server = callPackage ./pkgs/development/python-modules/tmux-language-server { };
     tree-sitter-zathurarc = callPackage ./pkgs/development/python-modules/tree-sitter-zathurarc { };
     zathura-language-server = callPackage ./pkgs/development/python-modules/zathura-language-server { };
-    # https://github.com/tree-sitter-grammars/tree-sitter-requirements/issues/3
     # tree-sitter-requirements = callPackage ./pkgs/development/python-modules/tree-sitter-requirements { };
     # requirements-language-server = callPackage ./pkgs/development/python-modules/requirements-language-server { };
     tree-sitter-languages = callPackage ./pkgs/development/python-modules/tree-sitter-languages { };

@@ -78,6 +78,10 @@ fetch.github = "tree-sitter-grammars/tree-sitter-requirements"
 src.github_tag = "tree-sitter/tree-sitter-bash"
 fetch.github = "tree-sitter/tree-sitter-bash"
 
+[tree-sitter-make]
+src.github_tag = "Freed-Wu/tree-sitter-make"
+fetch.github = "Freed-Wu/tree-sitter-make"
+
 [tree-sitter-languages]
 src.github_tag = "grantjenks/py-tree-sitter-languages"
 fetch.github = "grantjenks/py-tree-sitter-languages"

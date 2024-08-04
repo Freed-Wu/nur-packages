@@ -122,6 +122,17 @@
       sha256 = "sha256-AuPK15xtLiQx6N2OATVJFecsL8k3pOagrWu1GascbwM=";
     };
   };
+  tree-sitter-make = {
+    pname = "tree-sitter-make";
+    version = "1.0.1";
+    src = fetchFromGitHub {
+      owner = "Freed-Wu";
+      repo = "tree-sitter-make";
+      rev = "1.0.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-AWHA+M6A++pLegCwmRLlHK5roIz7Y0iYkpfg5pJ+Bcs=";
+    };
+  };
   tree-sitter-muttrc = {
     pname = "tree-sitter-muttrc";
     version = "0.0.6";

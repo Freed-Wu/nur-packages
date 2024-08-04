@@ -54,7 +54,6 @@ let
     tree-sitter-bash = callPackage ./pkgs/development/python-modules/tree-sitter-bash { };
     tree-sitter-requirements = callPackage ./pkgs/development/python-modules/tree-sitter-requirements { };
     requirements-language-server = callPackage ./pkgs/development/python-modules/requirements-language-server { };
-    tree-sitter-languages = callPackage ./pkgs/development/python-modules/tree-sitter-languages { };
     termux-language-server = callPackage ./pkgs/development/python-modules/termux-language-server { };
     autotools-language-server = callPackage ./pkgs/development/python-modules/autotools-language-server { };
 

@@ -111,17 +111,6 @@
       sha256 = "sha256-6Rfxh8Y6dg2wyQ9jYnbOaXm1SVfQDQ1B1tNqgpz6sY4=";
     };
   };
-  tree-sitter-languages = {
-    pname = "tree-sitter-languages";
-    version = "v1.10.2";
-    src = fetchFromGitHub {
-      owner = "grantjenks";
-      repo = "py-tree-sitter-languages";
-      rev = "v1.10.2";
-      fetchSubmodules = false;
-      sha256 = "sha256-AuPK15xtLiQx6N2OATVJFecsL8k3pOagrWu1GascbwM=";
-    };
-  };
   tree-sitter-make = {
     pname = "tree-sitter-make";
     version = "1.0.1";

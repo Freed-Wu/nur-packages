@@ -82,10 +82,6 @@ fetch.github = "tree-sitter/tree-sitter-bash"
 src.github_tag = "Freed-Wu/tree-sitter-make"
 fetch.github = "Freed-Wu/tree-sitter-make"
 
-[tree-sitter-languages]
-src.github_tag = "grantjenks/py-tree-sitter-languages"
-fetch.github = "grantjenks/py-tree-sitter-languages"
-
 [mulimgviewer]
 src.pypi = "mulimgviewer"
 fetch.pypi = "mulimgviewer"

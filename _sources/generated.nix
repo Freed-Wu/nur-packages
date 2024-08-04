@@ -100,6 +100,17 @@
       sha256 = "sha256-CrqcfyUH1EvagfoRUEMOdosK53nnQo56R6/hyX+ee7o=";
     };
   };
+  tree-sitter-bash = {
+    pname = "tree-sitter-bash";
+    version = "v0.21.0";
+    src = fetchFromGitHub {
+      owner = "tree-sitter";
+      repo = "tree-sitter-bash";
+      rev = "v0.21.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-6Rfxh8Y6dg2wyQ9jYnbOaXm1SVfQDQ1B1tNqgpz6sY4=";
+    };
+  };
   tree-sitter-languages = {
     pname = "tree-sitter-languages";
     version = "v1.10.2";

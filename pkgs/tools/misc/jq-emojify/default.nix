@@ -4,15 +4,16 @@
 , jq
 }:
 stdenvNoCC.mkDerivation rec {
-  name = "jq-emojify";
+  pname = "jq-emojify";
+  version = "0.0.1";
   srcs = [
     (
       fetchFromGitHub {
         owner = "Freed-Wu";
-        repo = name;
-        name = name;
-        rev = "472e42c512cc37e7aedf9f6b1f175edc3aa77f1b";
-        sha256 = "sha256-dxcnCVtfHHNVytz3/fa4F/nPqwEZjP2GFeZyl3/32pA=";
+        repo = pname;
+        name = pname;
+        rev = version;
+        sha256 = "sha256-n1knGf8TloatQc0k8/ZKre7vXu6g1L2XVaTSQZreOrc=";
       }
     )
     (

@@ -74,7 +74,7 @@ repos:
         additional_dependencies:
           - markdown-it-texmath
   - repo: https://github.com/scop/pre-commit-shfmt
-    rev: v3.10.0-1
+    rev: v3.10.0-2
     hooks:
       - id: shfmt
   - repo: https://github.com/NixOS/nixfmt

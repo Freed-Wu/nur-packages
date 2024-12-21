@@ -25,7 +25,7 @@ jobs:
             experimental-features = nix-command flakes
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
       - name: Setup cachix
-        uses: cachix/cachix-action@v13
+        uses: cachix/cachix-action@v15
         with:
           name: freed-wu
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"

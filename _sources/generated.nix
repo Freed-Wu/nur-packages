@@ -25,7 +25,7 @@
       repo = "bash-prompt";
       rev = "0.0.1";
       fetchSubmodules = false;
-      sha256 = "sha256-64KFbS63jyPhl4z0tsS+7vg6b2XrL2uIzhzWtOepu5k=";
+      sha256 = "sha256-7Sn/XIPNuc0IkmmNMkt8et5l8O6mLRq1rHg17bvXK4I=";
     };
   };
   expect-language-server = {
@@ -121,24 +121,18 @@
   };
   tree-sitter-bash = {
     pname = "tree-sitter-bash";
-    version = "v0.23.3";
-    src = fetchFromGitHub {
-      owner = "tree-sitter";
-      repo = "tree-sitter-bash";
-      rev = "v0.23.3";
-      fetchSubmodules = false;
-      sha256 = "sha256-7N1PLVMJxwN5FzHW9NbXZTzGhvziwLCC8tDO3qdjtOo=";
+    version = "0.23.3";
+    src = fetchurl {
+      url = "https://pypi.org/packages/source/t/tree_sitter_bash/tree_sitter_bash-0.23.3.tar.gz";
+      sha256 = "sha256-exXtiaHqjj48I5l1h0ZBPkZNTBw6bTt11kOuK8L7NWs=";
     };
   };
   tree-sitter-make = {
     pname = "tree-sitter-make";
-    version = "1.0.1";
-    src = fetchFromGitHub {
-      owner = "Freed-Wu";
-      repo = "tree-sitter-make";
-      rev = "1.0.1";
-      fetchSubmodules = false;
-      sha256 = "sha256-AWHA+M6A++pLegCwmRLlHK5roIz7Y0iYkpfg5pJ+Bcs=";
+    version = "1.1.1";
+    src = fetchurl {
+      url = "https://pypi.org/packages/source/t/tree_sitter_make/tree_sitter_make-1.1.1.tar.gz";
+      sha256 = "sha256-7zlGc6uDlW3/s5hlJvTAWQgv8thMh/naGKswAw9WG0w=";
     };
   };
   tree-sitter-muttrc = {
@@ -151,13 +145,10 @@
   };
   tree-sitter-requirements = {
     pname = "tree-sitter-requirements";
-    version = "v0.4.0";
-    src = fetchFromGitHub {
-      owner = "tree-sitter-grammars";
-      repo = "tree-sitter-requirements";
-      rev = "v0.4.0";
-      fetchSubmodules = false;
-      sha256 = "sha256-wqaFpT/4Gq8mWoORcZeGah18VunvKlgr8gCgHQvEF6E=";
+    version = "0.4.0";
+    src = fetchurl {
+      url = "https://pypi.org/packages/source/t/tree-sitter-requirements/tree-sitter-requirements-0.4.0.tar.gz";
+      sha256 = "sha256-IKS/woEhA+bEK3AWdqnWvsgdZvPjVZfKJqAVWApIGRk=";
     };
   };
   tree-sitter-tmux = {

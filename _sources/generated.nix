@@ -25,7 +25,7 @@
       repo = "bash-prompt";
       rev = "0.0.1";
       fetchSubmodules = false;
-      sha256 = "sha256-7Sn/XIPNuc0IkmmNMkt8et5l8O6mLRq1rHg17bvXK4I=";
+      sha256 = "sha256-64KFbS63jyPhl4z0tsS+7vg6b2XrL2uIzhzWtOepu5k=";
     };
   };
   expect-language-server = {

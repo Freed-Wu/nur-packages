@@ -121,10 +121,13 @@
   };
   tree-sitter-bash = {
     pname = "tree-sitter-bash";
-    version = "0.23.3";
-    src = fetchurl {
-      url = "https://pypi.org/packages/source/t/tree_sitter_bash/tree_sitter_bash-0.23.3.tar.gz";
-      sha256 = "sha256-exXtiaHqjj48I5l1h0ZBPkZNTBw6bTt11kOuK8L7NWs=";
+    version = "v0.23.3";
+    src = fetchFromGitHub {
+      owner = "tree-sitter";
+      repo = "tree-sitter-bash";
+      rev = "v0.23.3";
+      fetchSubmodules = false;
+      sha256 = "sha256-7N1PLVMJxwN5FzHW9NbXZTzGhvziwLCC8tDO3qdjtOo=";
     };
   };
   tree-sitter-make = {
@@ -145,10 +148,13 @@
   };
   tree-sitter-requirements = {
     pname = "tree-sitter-requirements";
-    version = "0.4.0";
-    src = fetchurl {
-      url = "https://pypi.org/packages/source/t/tree-sitter-requirements/tree-sitter-requirements-0.4.0.tar.gz";
-      sha256 = "sha256-IKS/woEhA+bEK3AWdqnWvsgdZvPjVZfKJqAVWApIGRk=";
+    version = "v0.4.0";
+    src = fetchFromGitHub {
+      owner = "tree-sitter-grammars";
+      repo = "tree-sitter-requirements";
+      rev = "v0.4.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-wqaFpT/4Gq8mWoORcZeGah18VunvKlgr8gCgHQvEF6E=";
     };
   };
   tree-sitter-tmux = {

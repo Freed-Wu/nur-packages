@@ -20,7 +20,7 @@ buildPythonPackage {
     platformdirs
   ];
   nativeBuildInputs = [
-    autopxd
+    autopxd2
     cython
     meson-python
     pkg-config

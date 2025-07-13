@@ -5,7 +5,6 @@
   pkg-config,
   stdenv,
   lib,
-  autopxd,
 }:
 
 with python3.pkgs;

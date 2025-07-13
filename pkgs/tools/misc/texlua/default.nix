@@ -15,6 +15,10 @@ stdenv.mkDerivation rec {
     CFLAGS = "-std=gnu99";
   };
 
+  patches = [
+    ./fix-LUA_ROOT.patch
+  ];
+
   buildPhase = ''
     sh build.sh --nolua53 --luahb --parallel
   '';

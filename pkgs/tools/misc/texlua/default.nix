@@ -25,9 +25,9 @@ stdenv.mkDerivation rec {
   '';
 
   meta = with lib; {
-    homepage = "https://github.com/Freed-Wu/manpager";
-    description = "Colorize `man XXX`";
-    license = licenses.gpl3;
+    homepage = "https://www.luatex.org/";
+    description = "The LuaTeX project's main objective is to provide an open and configurable variant of TeX while at the same time offering downward compatibility";
+    license = licenses.gpl2;
     maintainers = with maintainers; [ Freed-Wu ];
     platforms = platforms.unix;
   };

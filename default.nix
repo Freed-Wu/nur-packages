@@ -36,7 +36,7 @@ let
     manpager = callPackage ./pkgs/tools/misc/manpager { };
     jq-emojify = callPackage ./pkgs/tools/misc/jq-emojify { };
     tmux-rime = callPackage ./pkgs/tools/misc/tmux-rime { };
-    texlua = callPackage ./pkgs/tools/misc/texlua { };
+    luahbtex = callPackage ./pkgs/tools/misc/luahbtex { };
 
     tcl-prompt = callPackage ./pkgs/development/tcl-modules/tcl-prompt { };
 

@@ -26,4 +26,4 @@ jobs:
         run: |
           nix run 'nixpkgs#nvfetcher'
           git add _sources/generated.nix
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - uses: stefanzweifel/git-auto-commit-action@v7

@@ -17,7 +17,7 @@ buildPythonPackage rec {
     keyring
     langdetect
     jedi
-    notifypy
+    notify-py
     rich
     pystardict
     repl-python-wakatime

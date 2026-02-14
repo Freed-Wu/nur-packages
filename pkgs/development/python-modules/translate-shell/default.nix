@@ -1,7 +1,6 @@
 {
   mySources,
   python3,
-  clipman,
   lib,
 }:
 
@@ -13,7 +12,6 @@ buildPythonPackage rec {
   disabled = pythonOlder "3.6";
   propagatedBuildInputs = [
     aiohttp
-    clipman
     colorama
     keyring
     langdetect

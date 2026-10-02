@@ -52,21 +52,7 @@ let
 
     bash-prompt = callPackage ./pkgs/development/bash-modules/bash-prompt { };
 
-    lua51-prompt-style = callPackage ./pkgs/development/lua-modules/prompt-style {
-      luaPackages = pkgs.lua51Packages;
-    };
-    lua52-prompt-style = callPackage ./pkgs/development/lua-modules/prompt-style {
-      luaPackages = pkgs.lua52Packages;
-    };
-    lua53-prompt-style = callPackage ./pkgs/development/lua-modules/prompt-style {
-      luaPackages = pkgs.lua53Packages;
-    };
-    lua54-prompt-style = callPackage ./pkgs/development/lua-modules/prompt-style {
-      luaPackages = pkgs.lua54Packages;
-    };
-    luajit-prompt-style = callPackage ./pkgs/development/lua-modules/prompt-style {
-      luaPackages = pkgs.luajitPackages;
-    };
+    warna = callPackage ./pkgs/development/lua-modules/warna { };
 
     translate-shell = callPackage ./pkgs/development/python-modules/translate-shell { };
     mulimgviewer = callPackage ./pkgs/development/python-modules/mulimgviewer { };
